@@ -12,23 +12,32 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-p(#)%^tj%-1+y=uta!rfing8i=6y)*@@1kv5&rm8hswsk$vic$'
+SECRET_KEY = 'django-insecure-(ydc-ev9@h4ofb*t!2xw765e3s_bzk4v2sdk3qa5dp&f*ibtbu'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 ALLOWED_HOSTS = []
 
 
+
+
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+
+    'store',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -49,7 +62,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
 ROOT_URLCONF = 'marketplace_main.urls'
+
 
 TEMPLATES = [
     {
@@ -66,11 +81,15 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'marketplace_main.wsgi.application'
+
+
 
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
@@ -80,8 +99,11 @@ DATABASES = {
 }
 
 
+
+
 # Password validation
-# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validSators
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -99,24 +121,37 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
+
 LANGUAGE_CODE = 'en-us'
+
 
 TIME_ZONE = 'UTC'
 
+
 USE_I18N = True
 
+
 USE_TZ = True
+
+
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+
 STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
